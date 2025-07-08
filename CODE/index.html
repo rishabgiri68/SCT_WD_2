@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pixel Art Stopwatch</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+ 
+</head>
+<body>
+  <div class="stopwatch" role="region" aria-label="Pixel art style stopwatch">
+    <div class="display" aria-live="polite" aria-atomic="true" id="timeDisplay">00:00:00:00</div>
+    <div class="buttons" role="group" aria-label="Stopwatch controls">
+      <button id="startBtn" aria-label="Start Stopwatch">START</button>
+      <button id="pauseBtn" aria-label="Pause Stopwatch" disabled>PAUSE</button>
+      <button id="lapBtn" aria-label="Record Lap" disabled>LAP</button>
+      <button id="resetBtn" aria-label="Reset Stopwatch" disabled>RESET</button>
+    </div>
+    <div class="laps" id="lapsContainer" aria-live="polite" aria-label="Lap times">
+      
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html> 
